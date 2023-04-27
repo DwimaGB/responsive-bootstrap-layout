@@ -1,0 +1,81 @@
+
+:root{
+    --primary-color: #f498b8;
+    --accent-color: #dec0de;
+    --heading-color: #ea1c2c;
+
+    --standard-fw: 100;
+}
+
+body{
+    background-color: #f5d9d5;
+    font-family: 'Nunito', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.blurb h2{
+    color: var(--heading-color);
+    font-weight: var(--standard-fw);
+    font-size: 2.5rem;
+}
+
+.blurb p{
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+/* Navbar */
+
+#mainNavbar{
+    font-size: 1.25rem;
+    font-weight: var(--standard-fw);
+}
+
+#mainNavbar .navbar-brand {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+}
+
+#mainNavbar .nav-link:hover{
+    color: var(--heading-color);
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+.scrolled{
+    background-color: var(--accent-color);
+    transition: background-color 300ms;
+}
+
+/* Hero */
+
+#heading-group span{
+    color: var(--heading-color);
+}
+
+#heading-group h1{
+    font-weight: var(--standard-fw);
+    font-size: 4rem;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1200px){
+    #heading-group h1{
+        font-weight: var(--standard-fw);
+        font-size: 3rem;
+    }
+}
